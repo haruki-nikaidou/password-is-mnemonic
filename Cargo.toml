@@ -1,7 +1,9 @@
 [package]
-name = "same_password_generator"
+name = "password-is-mnemonic"
 version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-clap = "4.5.16"
+bip39 = "2.0.0"
+clap = { version = "4.5.16", features = ["derive"] }
+sha2 = "0.10.8"
